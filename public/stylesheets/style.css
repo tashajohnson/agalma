@@ -1,0 +1,22 @@
+form {
+  max-width: 450px;
+}
+.book {
+  height: 600px;
+  background: url('../images/openbook.jpg') no-repeat center;
+}
+.head {
+  padding-top: 80px;
+}
+textarea {
+  height: 50px;
+}
+h1 {
+  padding-left: 60px;
+}
+p {
+  padding-left: 60px;
+}
+body {
+  font-family: 'Cinzel', serif;
+}

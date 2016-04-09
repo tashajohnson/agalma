@@ -1,4 +1,10 @@
-nav
-  div.nav-wrapper
-    a.brand-logo(href="/") Agalma
-    ul#nav-mobile.right.hide-on-med-and-down
+nav.blue-grey.lighten-3 
+  ul#slide-out.side-nav
+    li
+      a(href='#!') About
+    li
+      a(href='#!') Settings
+  a.button-collapse.show-on-large(href='#', data-activates='slide-out')
+    i.material-icons view_headline 
+script.
+  $(".button-collapse").sideNav();

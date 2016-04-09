@@ -1,13 +1,13 @@
 {
-  "name": "agalma",
-  "description": "",
+  "name": "bo",
+  "description": "agalma",
   "main": "",
   "authors": [
-    "ty, tasha, ryan, marco"
+    "q"
   ],
   "license": "MIT",
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/tashajohnson/agalma",
   "ignore": [
     "**/.*",
     "node_modules",

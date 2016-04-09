@@ -4,9 +4,46 @@ html
     meta(charset='utf-8')
     title Agalma
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(rel='stylesheet', href='/vendor/Materialize/dist/css/materialize.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Cinzel', rel='stylesheet', type='text/css')
+    script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/moment/moment.js')
+    script(src='/vendor/Materialize/dist/js/materialize.js')
   header
     include ./partials/header.jade
   body
-    block content
+    .container
+      .row.book
+        .head.valign-wrapper
+          .col.m6.valign
+            .title
+              h1.center Agalma
+              p.center The image based journaling system
+          .col.m6.valign
+            form(method="post", enctype="multipart/form-data",action="/pictures/")
+              .input-field
+                input(type="text",name="title",placeholder="Entry Title")
+                textarea.materialize-textarea(name="text", placeholder="New Journal Entry")
+              .file-field.input-field
+                .btn.blue-grey
+                  span Choose an Image
+                input(type="file", name="upl")
+                
+                input.file-path.validate(type='text')
+                input.btn.blue-grey(type="submit")
+      block content
+    footer.blue-grey.page-footer.sticky-footer
+      .container
+        .row
+          .col.m12
+            h5.center.white-text 
+              |&copy; Agalma
+      .footer-copyright
+        .container
+          | © 2014 Copyright Text
+          a.grey-text.text-lighten-4.right(href='#!') More Links
+
+
+            
+

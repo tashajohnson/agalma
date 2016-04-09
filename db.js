@@ -1,8 +1,12 @@
 var mongoose = require( 'mongoose' );
 var Schema   = mongoose.Schema;
 
-//var Model = new Schema({
-//});
+var Entry = new Schema({
+  title: {type: String, required: true},
+  text: {type: String, required: true},
+  filename: {type: String},
+  updated_at: Date
+});
 
-//mongoose.model( 'Model', Model );
+mongoose.model( 'Entry', Entry );
 mongoose.connect( 'mongodb://localhost/agalma' );
