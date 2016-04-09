@@ -20,3 +20,11 @@ p {
 body {
   font-family: 'Cinzel', serif;
 }
+.card {
+  max-width: 320px;
+  max-height: 380px;
+
+}
+img {
+  height: 300px;
+}

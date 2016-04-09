@@ -3,7 +3,7 @@ import React from 'react';
 class Entry extends React.Component {
   render() {
     return(
-        <div className='col m3 s12'>
+        <div className='col m4 s12'>
           <div className='card'>
             <div className='card-image waves-effect waves-block waves-light'>
               <img className='activator' src={`./uploads/${this.props.filename}`} />
